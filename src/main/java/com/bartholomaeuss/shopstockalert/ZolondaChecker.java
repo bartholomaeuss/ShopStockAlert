@@ -14,7 +14,7 @@ import java.util.List;
  * from the deal elements.
  * </p>
  */
-public class AvailabilityChecker {
+public class ZolondaChecker {
     private Website website = null;
     private String title;
     private Elements articles;
@@ -27,10 +27,10 @@ public class AvailabilityChecker {
      * The constructor initializes the Website object, retrieves the title, articles, deals and hrefs.
      * </p>
      */
-    public AvailabilityChecker() {
+    public ZolondaChecker(String url) {
 
         try {
-            this.website = new Website("https://www.zalando.de/herrenschuhe/skechers-online-shop__groesse-47~5/?shoe_width=weit&order=price&dir=asc");
+            this.website = new Website(url);
         } catch (IOException e) {
             e.printStackTrace();
             System.out.println("An error occurred, the program will now exit.");
@@ -105,7 +105,7 @@ public class AvailabilityChecker {
     public List<String> getHrefs() {
         List<String> hrefs = new ArrayList<>();
         for (Element deal : deals) {
-            String href = deal.select("a").attr("href");
+            String href = deal.getElementsByTag("a").attr("href");
             if (!href.isEmpty()) {
                 hrefs.add(href);
             }
