@@ -4,3 +4,10 @@
 # Maven
 log/
 target/
+
+# Credentials
+src/main/resources/cs.json
+**/cs.json
+
+GMail Token
+tokens/
