@@ -11,3 +11,6 @@ src/main/resources/cs.json
 
 GMail Token
 tokens/
+
+# Scripts
+scripts/
