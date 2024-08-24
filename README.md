@@ -8,12 +8,12 @@ This project demonstrates the usage of web scraping and data processing with Jav
 
 ## Features
 
-- Fetches Webpage Content: Utilizes Jsoup to retrieve the content of the webpage.
-- Extracts Article Elements: Parses the page to extract article elements.
-- Identifies Relevant Articles: Searches for articles containing specific keywords (e.g., "deal").
-- Provides Deal Links: Gathers and displays links to the identified deals.
-- Sends Email Notifications: Notifies users about new deals via email.
-- Command-Line Authorization: Configures and authorizes the application through command-line arguments.
+- **Fetches Webpage Content**: Utilizes Jsoup to retrieve the content of the webpage.
+- **Extracts Article Elements**: Parses the page to extract article elements.
+- **Identifies Relevant Articles**: Searches for articles containing specific keywords (e.g., "deal").
+- **Provides Deal Links**: Gathers and displays links to the identified deals.
+- **Sends Email Notifications**: Notifies users about new deals via email.
+- **Command-Line Authorization**: Configures and authorizes the application through command-line arguments.
 
 ## Getting Started
 
